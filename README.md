@@ -1,2 +1,2 @@
 # LCPractice
-Attempted problems from LeetCode
+Solved problems from LeetCode
