@@ -24,4 +24,16 @@ public:
         }
         return head;
     }
+
+
+    ListNode* middleNode2(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while (fast->next != nullptr && fast->next->next != nullptr) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return fast->next == nullptr ? slow : slow->next; 
+    }
+
 };
