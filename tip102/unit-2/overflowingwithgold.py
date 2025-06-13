@@ -12,7 +12,7 @@ def find_treasure_indices(gold_amounts, target):
             return [i,wantedNumbers[v]]
     return [0,0]
     
-    
+
     
 gold_amounts1 = [2, 7, 11, 15]
 target1 = 9
@@ -31,3 +31,5 @@ print(find_treasure_indices(gold_amounts1, target1))
 print(find_treasure_indices(gold_amounts2, target2))  
 print(find_treasure_indices(gold_amounts3, target3))  
 print(find_treasure_indices(gold_amounts4, target4))  
+print(find_treasure_indices([1,2,3,4],5))
+print(find_treasure_indices([2,3,2],4))
