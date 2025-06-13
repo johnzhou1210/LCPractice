@@ -3,6 +3,12 @@ import math
 def split_list(list, chunk_size):
     return [list[i:i+chunk_size] for i in range(0, len(list), chunk_size)]
 
+def split_list2(list, chunk_size):
+    result = []
+    for i in range(0, len(list), chunk_size):
+        result.append(list[i:i+chunk_size])
+    return result
+
 def organize_pirate_crew(group_sizes):
     # first see how many groups of each size we will need.
     groupsTally = dict() # Keeps track of each group type, and the indices in each group
@@ -20,7 +26,7 @@ def organize_pirate_crew(group_sizes):
     # Go through each dictionary item and split them
     result = []
     for k,v in groupsTally.items():
-        itemsToAppend = split_list(v,k)
+        itemsToAppend = split_list2(v,k)
         for item in itemsToAppend:
             result.append(item)
     
