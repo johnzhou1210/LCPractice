@@ -9,8 +9,12 @@
 # return steps
 
 def time_required_to_stream(movies, k):
-    ptr = 0
     steps = 0
+    # edge case: the user in question does not have any movies to stream to begin with
+    if movies[k] <= 0:
+        return steps
+
+    ptr = 0
     while ptr < len(movies):
         if movies[ptr] > 0:
             movies[ptr] -= 1
