@@ -1,0 +1,10 @@
+# Plan
+# Import deque from collections and create a deque from input
+# 1. Create variable that stores min value and set the min value
+# 2. Create result queue
+# 3. While result queue's length is less than input deque's length:
+#   a. compare current int with min value
+#       i. If current int greater than min value
+
+def reveal_attendee_list_in_order(attendees):
+    pass
