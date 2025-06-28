@@ -8,6 +8,8 @@
 # edge cases
 # 1. Criteria is not found: just don't add the brand name
 # 2. Case sensitivity? Ignore it.
+# 3. Empty brands list? Should return empty list.
+
 
 def filter_sustainable_brands(brands, criterion):
     result = []
